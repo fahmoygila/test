@@ -1,7 +1,13 @@
-# Feature: login - 1
+Feature: login - 1
 
-#   Scenario: sebagai user, saya dapat login di herokuapp
+  Scenario: sebagai user, saya dapat login di herokuapp
 
-#     Given I am on the login page
-#     When I login with 'John Doe' and 'ThisIsNotAPassword'
+    Given I am on the login page
+    When I login with '<username>' and '<password>'
+
+
+    Examples:
+        | username | password |
+        | John Doe  | ThisIsNotAPassword | 
+
 
